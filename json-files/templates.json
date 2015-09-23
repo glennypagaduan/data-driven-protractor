@@ -1,0 +1,67 @@
+{
+	"name": "Hawaii Test",
+	"description": "Hawaii Test",
+	"groups": [
+	{
+		"title": "Page 1",
+		"indicators": [
+		{
+			"description": "Date of Observation/Walkthrough",
+			"type": "Open-Ended"
+		},
+		{
+			"description": "Course of Study",
+			"type": "Multiple Choice",
+			"multieSelect": false,
+			"options": [
+			{
+				"description": "Math"
+			},
+			{
+				"description": "Language Arts/English"
+			},
+			{
+				"description": "Social Studies"
+			},
+			{
+				"description": "Science"
+			},
+			{
+				"description": "Health"
+			},
+			{
+				"description": "Physical Education"
+			},
+			{
+				"description": "Art"
+			},
+			{
+				"description": "World Language"
+			},
+			{
+				"description": "Guidance"
+			},
+			{
+				"description": "Other"
+			}]
+		},
+		{
+			"description": "Teacher/Student Engagement",
+			"type": "Rubric",
+			"options": [
+			{
+				"description": "Exemplary Engagement"
+			},
+			{
+				"description": "Partially Engaged"
+			},
+			{
+				"description": "Not Engaged"
+			}]
+		},
+		{
+			"description": "Teacher Content Delivery",
+			"type": "Open-Ended"
+		}]
+	}]
+}

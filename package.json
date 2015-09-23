@@ -1,0 +1,27 @@
+{
+  "name": "data-driven-protractor",
+  "version": "1.0.0",
+  "description": "data driven testing using protractor and handlebars",
+  "main": "json-parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jkentreynes/data-driven-protractor.git"
+  },
+  "keywords": [
+    "data-driven",
+    "protracotr-handlebars"
+  ],
+  "author": "gz-qa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkentreynes/data-driven-protractor/issues"
+  },
+  "homepage": "https://github.com/jkentreynes/data-driven-protractor#readme",
+  "dependencies": {
+    "handlebars": "^4.0.2",
+    "handlebars-helpers": "^0.5.8"
+  }
+}

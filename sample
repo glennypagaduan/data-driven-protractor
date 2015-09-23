@@ -1,0 +1,26 @@
+{{#each groups}}
+		{{this}}
+	{{/each}}
+
+
+	{{#each this}}
+		{{this}}
+	{{/each}}
+
+
+
+	{{#each this}}
+		{{#each this}}
+			{{@key}} : {{this}}
+		{{/each}}
+	{{/each}}
+
+
+
+
+
+	{{#each groups}}
+		{{#each this}}
+			{{@key}} : {{this}}
+		{{/each}}
+	{{/each}}
