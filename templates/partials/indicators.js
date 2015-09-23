@@ -1,9 +1,9 @@
-{{#ifCond type '===' 'Label'}}
+{{#is type 'Label'}}
 	it( 'should create label indicator', function () {
 			{{description}}
 	} );
-{{/ifCond}}
-{{#ifCond type '===' 'Multiple Choice'}}
+{{/is}}
+{{#is type 'Multiple Choice'}}
 	it( 'should create multiple-choice indicator', function () {
 			{{description}}
 			{{type}}
@@ -14,14 +14,14 @@
 				{{/each}}
 			{{/each}}
 	} );
-{{/ifCond}}
-{{#ifCond type '===' 'Open-Ended'}}
+{{/is}}
+{{#is type 'Open-Ended'}}
 	it( 'should create open-ended indicator', function () {
 			{{description}}
 			{{type}}
 	} );
-{{/ifCond}}
-{{#ifCond type '===' 'Rubric'}}
+{{/is}}
+{{#is type 'Rubric'}}
 	it( 'should create rubric indicator', function () {
 			{{description}}
 			{{type}}
@@ -31,5 +31,5 @@
 				{{/each}}
 			{{/each}}
 	} );
-{{/ifCond}}
+{{/is}}
 

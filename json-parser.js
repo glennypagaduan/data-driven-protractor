@@ -8,35 +8,14 @@ var indicatorsPartial = fs.readFileSync( './templates/partials/indicators.js', '
 
  ( function () {
 
+ 	require('./node_modules/handlebars-helpers/lib/helper-lib.js').register(handlebars, {});
+
  	handlebars.registerPartial( 'createGroupPartial', createGroupPartial );
  	handlebars.registerPartial( 'indicatorsPartial', indicatorsPartial);
 
- 	handlebars.registerHelper('ifCond', function( v1, operator, v2, options ) {
-		switch (operator) {
-	        case '==':
-	            return (v1 == v2) ? options.fn(this) : options.inverse(this);
-	        case '===':
-	            return (v1 === v2) ? options.fn(this) : options.inverse(this);
-	        case '<':
-	            return (v1 < v2) ? options.fn(this) : options.inverse(this);
-	        case '<=':
-	            return (v1 <= v2) ? options.fn(this) : options.inverse(this);
-	        case '>':
-	            return (v1 > v2) ? options.fn(this) : options.inverse(this);
-	        case '>=':
-	            return (v1 >= v2) ? options.fn(this) : options.inverse(this);
-	        case '&&':
-	            return (v1 && v2) ? options.fn(this) : options.inverse(this);
-	        case '||':
-	            return (v1 || v2) ? options.fn(this) : options.inverse(this);
-	        default:
-	            return options.inverse(this);
-	    }
-	} );
 
-	var text = handlebars.compile( template );
+	var spec = handlebars.compile( template );
 
-	console.log(text( templatesJSON ) );
-	fs.writeFileSync( './spec/spec1.js', text( templatesJSON ) );
+	fs.writeFileSync( './spec/spec1.js', spec( templatesJSON ) );
 
  } )();
